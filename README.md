@@ -1,44 +1,59 @@
-# TechCareer - Tech Education & Training Platform
+# TechCareer
 
-> **IMPORTANT NOTICE: This is an AI-generated website created as a personal hobby project. Commercial use is strictly prohibited without explicit permission from the author. All rights reserved. Copyright © 2023.**
+A tech education and training platform built with Node.js, Express, and Bootstrap.
 
-TechCareer is a platform for tech education, training, and career advancement resources featuring course marketplace, webinars, and user profiles.
+## Prerequisites
 
-## Overview
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-A modern platform where users can explore courses, register for webinars, and track learning progress.
-
-**Tech Stack**: HTML5, CSS3, JavaScript, Bootstrap 5, Node.js, Express.js, SQLite3
-
-## Features
-- User registration and authentication
-- Course catalog with enrollment functionality
-- Webinar registration
-- Profile management
-- Responsive design
-
-## Setup
+## Running Locally
 
 ### Backend Setup
-```bash
-cd backend
-npm install
-npm run init-db
-npm start
-```
 
-### Frontend Access
-Access via `http://localhost:3000/index.html` or open HTML files directly
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
 
-## Documentation
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### Frontend
-- **Pages**: Home, Courses, Profile, Login/Signup, etc.
-- **Components**: Bootstrap 5 UI elements
-- **Core Files**: auth.js, course-manager.js, form-validation.js
+3. Initialize the database:
+   ```bash
+   npm run init-db
+   ```
 
-### Backend
-The Node.js/Express.js server provides the following key API endpoints:
+4. Start the server:
+   ```bash
+   npm start
+   ```
+
+   For development with auto-restart:
+   ```bash
+   npm run dev
+   ```
+
+### Accessing the Frontend
+
+Once the server is running, you can access the frontend in two ways:
+
+1. Through the Express server (recommended):
+   - Open your browser and navigate to: `http://localhost:3000/index.html`
+
+2. By opening the HTML files directly from the filesystem:
+   - Navigate to the `/frontend` directory
+   - Open any HTML file in your browser
+
+### Demo Accounts
+
+For testing the application:
+- **Admin**: admin@example.com / admin123
+- **User**: user@example.com / user123
+
+## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -48,19 +63,5 @@ The Node.js/Express.js server provides the following key API endpoints:
 | `/api/purchase` | POST | Enroll in course |
 | `/api/user/:userId` | PUT | Update profile |
 
-### Database
-SQLite3 database with tables for users, courses, enrollments, and webinars.
-
-## Demo Accounts
-- **Admin**: admin@example.com / admin123
-- **User**: user@example.com / user123
-
-## License
-This project is for personal use only. All rights reserved.
-
-## Contact
-For inquiries: your-email@example.com
-
 ---
-*This is an AI-generated educational project. Not intended for commercial use.*
-# techcareer
+*Note: This is a personal educational project. Not intended for commercial use.*
