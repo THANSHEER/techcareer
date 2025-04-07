@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses - TechCareer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="d-flex align-items-center">
+                    <i class="bi bi-mortarboard-fill text-primary me-2" style="font-size: 2rem;"></i>
+                    <span style="font-size: 1.4rem; font-weight: 700;">TechCareer</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-primary text-white active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item active" href="my-courses.html">My Courses</a></li>
+                            <li><a class="dropdown-item" href="#" id="logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white">
+        <div class="container">
+            <h1>My Courses</h1>
+            <p>Access your enrolled courses and track your progress</p>
+        </div>
+    </section>
+
+    <!-- My Courses Section -->
+    <section class="my-courses py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <h2>Your Enrolled Courses</h2>
+                    <p class="lead">Continue learning where you left off.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="courses.html" class="btn btn-outline-primary">
+                        <i class="bi bi-plus-circle"></i> Explore More Courses
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course Progress Cards -->
+            <div class="row" id="enrolled-courses-container">
+                <!-- Courses will be loaded dynamically -->
+                <div class="col-12 text-center py-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3">Loading your courses...</p>
+                </div>
+            </div>
+
+            <!-- Course Recommendations -->
+            <div class="recommendations mt-5">
+                <h3 class="mb-4">Recommended For You</h3>
+                <div class="row">
+                    <!-- Recommendation 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 course-card">
+                            <img src="images/courses/data-science.jpg" class="card-img-top" alt="Data Science">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-success">Data Science</span>
+                                    <span class="badge bg-secondary">10 Weeks</span>
+                                </div>
+                                <h5 class="card-title">Data Science & Machine Learning</h5>
+                                <p class="card-text">Learn to analyze and visualize data, build predictive models, and implement machine learning algorithms using Python.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="course-price">$2,299</span>
+                                    <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 course-card">
+                            <img src="images/courses/mobile-dev.jpg" class="card-img-top" alt="Mobile Development">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-danger">Mobile Development</span>
+                                    <span class="badge bg-secondary">8 Weeks</span>
+                                </div>
+                                <h5 class="card-title">React Native Mobile Development</h5>
+                                <p class="card-text">Create cross-platform mobile applications for iOS and Android using React Native.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="course-price">$1,799</span>
+                                    <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 course-card">
+                            <img src="images/courses/ui-ux.jpg" class="card-img-top" alt="UI/UX Design">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-info text-dark">UI/UX Design</span>
+                                    <span class="badge bg-secondary">6 Weeks</span>
+                                </div>
+                                <h5 class="card-title">UI/UX Design Fundamentals</h5>
+                                <p class="card-text">Learn the principles of user interface and experience design. Create wireframes and prototypes.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="course-price">$1,499</span>
+                                    <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo-white.png" alt="TechCareer Logo" width="150">
+                    <p class="mt-3">Empowering careers through quality training and placement services.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-white">Programs</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <address>
+                        123 Training Avenue<br>
+                        Tech City, TC 12345<br>
+                        <a href="tel:+1234567890" class="text-white">Phone: (123) 456-7890</a><br>
+                        <a href="mailto:info@techcareer.com" class="text-white">Email: info@techcareer.com</a>
+                    </address>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2023 TechCareer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        // Check authentication
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verify user is logged in, redirect to login if not
+            const user = JSON.parse(localStorage.getItem('user') || '{}');
+            if (!user.id) {
+                window.location.href = 'login.html?redirect=my-courses.html';
+                return;
+            }
+            
+            // Load user's courses
+            fetch(`http://localhost:3000/api/user/${user.id}/courses`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        displayUserCourses(data.courses);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching courses:', error);
+                    document.getElementById('enrolled-courses-container').innerHTML = `
+                        <div class="col-12">
+                            <div class="alert alert-danger">
+                                Failed to load your courses. Please try again later.
+                            </div>
+                        </div>
+                    `;
+                });
+        });
+        
+        function displayUserCourses(courses) {
+            const container = document.getElementById('enrolled-courses-container');
+            
+            if (!courses || courses.length === 0) {
+                container.innerHTML = `
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle me-2"></i> You are not enrolled in any courses yet.
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="courses.html" class="btn btn-primary">Browse Available Courses</a>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '';
+            
+            courses.forEach(course => {
+                html += `
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 course-card">
+                            <div class="card-header d-flex justify-content-between align-items-center bg-light">
+                                <span class="badge bg-success">In Progress</span>
+                                <small class="text-muted">Enrolled: ${formatDate()}</small>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">${course.title}</h5>
+                                <div class="instructor mb-2">
+                                    <small class="text-muted">
+                                        <i class="bi bi-person-circle me-1"></i> Instructor: ${course.instructor}
+                                    </small>
+                                </div>
+                                <div class="progress mb-3" style="height: 10px;">
+                                    <div class="progress-bar bg-success" role="progressbar" 
+                                         style="width: ${course.progress}%;" aria-valuenow="${course.progress}" 
+                                         aria-valuemin="0" aria-valuemax="100">${course.progress}%</div>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-muted">${course.completedModules} of ${course.totalModules} modules completed</small>
+                                    <small class="text-muted">${course.progress}% complete</small>
+                                </div>
+                                <p class="card-text">${course.description}</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#" class="btn btn-primary">Continue Learning</a>
+                                    <a href="course-details.html?id=${course.id}" class="btn btn-outline-secondary">View Course Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+        
+        function formatDate() {
+            // Create a random date within the last 6 months
+            const today = new Date();
+            const monthsAgo = Math.floor(Math.random() * 6);
+            const daysAgo = Math.floor(Math.random() * 30);
+            const enrollmentDate = new Date(today);
+            enrollmentDate.setMonth(today.getMonth() - monthsAgo);
+            enrollmentDate.setDate(today.getDate() - daysAgo);
+            
+            return enrollmentDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short', 
+                day: 'numeric'
+            });
+        }
+    </script>
+</body>
+</html>

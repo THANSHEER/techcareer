@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - TechCareer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="d-flex align-items-center">
+                    <i class="bi bi-mortarboard-fill text-primary me-2" style="font-size: 2rem;"></i>
+                    <span style="font-size: 1.4rem; font-weight: 700;">TechCareer</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-primary text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Details Section -->
+    <section class="course-details py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Course Info -->
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="courses.html">All Courses</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" id="course-title">Course Details</li>
+                        </ol>
+                    </nav>
+                    
+                    <div class="course-header mb-4">
+                        <h1 id="course-title-heading">Loading Course...</h1>
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="badge bg-primary me-2" id="course-category">Category</span>
+                            <span class="text-muted"><i class="bi bi-person-circle me-1"></i> <span id="course-instructor">Instructor</span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="course-image mb-4">
+                        <!-- Replace image with placeholder -->
+                        <div id="course-image-placeholder" class="placeholder-img rounded d-flex align-items-center justify-content-center" style="height: 350px;">
+                            <div class="text-center">
+                                <i class="bi bi-book text-primary" style="font-size: 4rem;"></i>
+                                <p class="mt-2" id="course-name-placeholder">Course Image</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-description mb-4">
+                        <h3>About This Course</h3>
+                        <p id="course-description">Loading course description...</p>
+                    </div>
+                    
+                    <div class="course-curriculum mb-4">
+                        <h3>What You'll Learn</h3>
+                        <div class="accordion" id="courseModules">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="moduleHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#moduleContent1" aria-expanded="true" aria-controls="moduleContent1">
+                                        Module 1: Introduction
+                                    </button>
+                                </h2>
+                                <div id="moduleContent1" class="accordion-collapse collapse show" aria-labelledby="moduleHeading1" data-bs-parent="#courseModules">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <i class="bi bi-play-circle me-2"></i>
+                                                    Welcome & Course Overview
+                                                </div>
+                                                <span class="badge bg-light text-dark">15:20</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <i class="bi bi-file-text me-2"></i>
+                                                    Course Resources &amp; Setup Guide
+                                                </div>
+                                                <span class="badge bg-light text-dark">PDF</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="moduleHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#moduleContent2" aria-expanded="false" aria-controls="moduleContent2">
+                                        Module 2: Getting Started
+                                    </button>
+                                </h2>
+                                <div id="moduleContent2" class="accordion-collapse collapse" aria-labelledby="moduleHeading2" data-bs-parent="#courseModules">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <i class="bi bi-play-circle me-2"></i>
+                                                    Setting Up Your Environment
+                                                </div>
+                                                <span class="badge bg-light text-dark">20:15</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <i class="bi bi-play-circle me-2"></i>
+                                                    Basic Concepts
+                                                </div>
+                                                <span class="badge bg-light text-dark">18:45</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <i class="bi bi-journal-code me-2"></i>
+                                                    Practice Exercise
+                                                </div>
+                                                <span class="badge bg-light text-dark">Exercise</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card course-card-purchase sticky-lg-top" style="top: 20px; z-index: 100;">
+                        <div class="card-body">
+                            <h3 class="course-price mb-3" id="course-price">$0</h3>
+                            <div id="purchase-section">
+                                <button id="purchase-button" class="btn btn-primary btn-lg w-100 mb-3">Purchase This Course</button>
+                                <small class="d-block text-center mb-3">30-Day Money-Back Guarantee</small>
+                            </div>
+                            <div id="enrolled-section" style="display: none;">
+                                <div class="alert alert-success">
+                                    <i class="bi bi-check-circle-fill me-2"></i> You're enrolled in this course
+                                </div>
+                                <a href="my-courses.html" class="btn btn-outline-primary btn-lg w-100">Go to My Courses</a>
+                            </div>
+                            
+                            <div class="course-details-list mt-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-clock me-2"></i> Duration:</span>
+                                    <span id="course-duration">12 weeks</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-journal me-2"></i> Modules:</span>
+                                    <span id="course-modules">20 modules</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-bar-chart me-2"></i> Level:</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-translate me-2"></i> Language:</span>
+                                    <span>English</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span><i class="bi bi-infinity me-2"></i> Access:</span>
+                                    <span>Lifetime</span>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                    <i class="bi bi-share me-2"></i> Share this Course
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Share Modal -->
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shareModalLabel">Share this Course</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="shareUrl" value="https://techcareer.com/course/123" readonly>
+                        <button class="btn btn-outline-secondary" type="button" id="copyButton">Copy</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-primary mx-1"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-info mx-1"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-success mx-1"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="btn btn-outline-danger mx-1"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo-white.png" alt="TechCareer Logo" width="150">
+                    <p class="mt-3">Empowering careers through quality training and placement services.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-white">Programs</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <address>
+                        123 Training Avenue<br>
+                        Tech City, TC 12345<br>
+                        <a href="tel:+1234567890" class="text-white">Phone: (123) 456-7890</a><br>
+                        <a href="mailto:info@techcareer.com" class="text-white">Email: info@techcareer.com</a>
+                    </address>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2023 TechCareer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get course ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const courseId = urlParams.get('id');
+            
+            if (!courseId) {
+                window.location.href = 'courses.html';
+                return;
+            }
+            
+            // Fetch course details
+            fetch(`http://localhost:3000/api/courses`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const course = data.courses.find(c => c.id === parseInt(courseId));
+                        if (course) {
+                            displayCourseDetails(course);
+                            setupPurchaseButton(course);
+                        } else {
+                            alert('Course not found!');
+                            window.location.href = 'courses.html';
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching course details:', error);
+                });
+                
+            // Copy share URL
+            document.getElementById('copyButton').addEventListener('click', function() {
+                const shareUrl = document.getElementById('shareUrl');
+                shareUrl.select();
+                document.execCommand('copy');
+                this.innerText = 'Copied!';
+                setTimeout(() => {
+                    this.innerText = 'Copy';
+                }, 2000);
+            });
+        });
+        
+        function displayCourseDetails(course) {
+            document.title = `${course.title} - TechCareer`;
+            document.getElementById('course-title').textContent = course.title;
+            document.getElementById('course-title-heading').textContent = course.title;
+            document.getElementById('course-instructor').textContent = course.instructor;
+            document.getElementById('course-description').textContent = course.description;
+            document.getElementById('course-price').textContent = `$${course.price}`;
+            document.getElementById('course-modules').textContent = `${course.totalModules} modules`;
+            document.getElementById('course-name-placeholder').textContent = course.title;
+            
+            // Set category based on course title and update placeholder icon
+            let category = "Web Development";
+            let iconClass = "bi-code-square";
+            let bgColor = "bg-primary bg-opacity-10";
+            
+            if (course.title.includes("Data")) {
+                category = "Data Science";
+                iconClass = "bi-graph-up";
+                bgColor = "bg-success bg-opacity-10";
+            }
+            if (course.title.includes("Mobile")) {
+                category = "Mobile Dev";
+                iconClass = "bi-phone";
+                bgColor = "bg-danger bg-opacity-10";
+            }
+            if (course.title.includes("UI")) {
+                category = "UI/UX Design";
+                iconClass = "bi-palette";
+                bgColor = "bg-info bg-opacity-10";
+            }
+            
+            document.getElementById('course-category').textContent = category;
+            
+            // Update the placeholder with appropriate icon
+            const placeholder = document.getElementById('course-image-placeholder');
+            placeholder.className = `placeholder-img rounded d-flex align-items-center justify-content-center ${bgColor}`;
+            placeholder.querySelector('i').className = `bi ${iconClass} text-primary`;
+            
+            // Set duration based on modules
+            let duration = "8 weeks";
+            if (course.totalModules > 15) duration = "12 weeks";
+            if (course.totalModules < 10) duration = "6 weeks";
+            
+            document.getElementById('course-duration').textContent = duration;
+            
+            // Set course image
+            try {
+                document.getElementById('course-image').src = `images/courses/${course.id}.jpg`;
+            } catch (e) {
+                console.log('Course image not found, using placeholder');
+            }
+        }
+        
+        function setupPurchaseButton(course) {
+            const purchaseBtn = document.getElementById('purchase-button');
+            const purchaseSection = document.getElementById('purchase-section');
+            const enrolledSection = document.getElementById('enrolled-section');
+            
+            // Check if user is logged in
+            const user = JSON.parse(localStorage.getItem('user') || '{}');
+            
+            if (!user.id) {
+                // Not logged in
+                purchaseBtn.addEventListener('click', function() {
+                    window.location.href = `login.html?redirect=course-details.html?id=${course.id}`;
+                });
+                return;
+            }
+            
+            // Check if already enrolled
+            checkIfEnrolled(user.id, course.id)
+                .then(isEnrolled => {
+                    if (isEnrolled) {
+                        purchaseSection.style.display = 'none';
+                        enrolledSection.style.display = 'block';
+                    } else {
+                        // Setup purchase button
+                        purchaseBtn.addEventListener('click', function() {
+                            purchaseCourse(user.id, course.id);
+                        });
+                    }
+                });
+        }
+        
+        function checkIfEnrolled(userId, courseId) {
+            return fetch(`http://localhost:3000/api/user/${userId}/courses`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        return data.courses.some(course => course.id === parseInt(courseId));
+                    }
+                    return false;
+                })
+                .catch(error => {
+                    console.error('Error checking enrollment:', error);
+                    return false;
+                });
+        }
+        
+        function purchaseCourse(userId, courseId) {
+            fetch('http://localhost:3000/api/purchase', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ userId, courseId }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Course purchased successfully!');
+                    document.getElementById('purchase-section').style.display = 'none';
+                    document.getElementById('enrolled-section').style.display = 'block';
+                } else {
+                    alert(data.message || 'Failed to purchase course');
+                }
+            })
+            .catch(error => {
+                console.error('Error purchasing course:', error);
+                alert('An error occurred. Please try again later.');
+            });
+        }
+    </script>
+</body>
+</html>

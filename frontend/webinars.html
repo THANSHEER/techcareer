@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Tech Webinars - TechCareer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="d-flex align-items-center">
+                    <i class="bi bi-mortarboard-fill text-primary me-2" style="font-size: 2rem;"></i>
+                    <span style="font-size: 1.4rem; font-weight: 700;">TechCareer</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-primary text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white">
+        <div class="container">
+            <h1>Free Weekly Webinars</h1>
+            <p>Enhance your skills with our expert-led live sessions</p>
+        </div>
+    </section>
+
+    <!-- Webinars Section -->
+    <section class="webinars-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <h2>Upcoming Webinars</h2>
+                    <p class="lead">Join our free interactive sessions to boost your career and tech skills. All webinars include Q&A sessions and downloadable resources.</p>
+                </div>
+            </div>
+
+            <!-- Webinars List -->
+            <div class="row">
+                <!-- Webinar 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 webinar-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="webinar-icon bg-primary text-white me-3">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <h3 class="card-title h4">1-Hour Resume Building Masterclass</h3>
+                            </div>
+                            <p class="card-text">Learn how to create an ATS-friendly tech resume that highlights your skills and gets you noticed by recruiters.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-calendar3 me-2 text-primary"></i> Every Tuesday, 7:00 PM - 8:00 PM</li>
+                                <li class="mb-2"><i class="bi bi-person me-2 text-primary"></i> Led by Sarah Johnson, HR Specialist</li>
+                                <li><i class="bi bi-globe me-2 text-primary"></i> Online via Zoom</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webinar 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 webinar-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="webinar-icon bg-success text-white me-3">
+                                    <i class="bi bi-person-badge"></i>
+                                </div>
+                                <h3 class="card-title h4">Personal Branding for Tech Professionals</h3>
+                            </div>
+                            <p class="card-text">Discover how to build your personal brand online and position yourself as an expert in your tech niche.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-calendar3 me-2 text-success"></i> Every Wednesday, 6:00 PM - 7:00 PM</li>
+                                <li class="mb-2"><i class="bi bi-person me-2 text-success"></i> Led by Michael Smith, Personal Brand Coach</li>
+                                <li><i class="bi bi-globe me-2 text-success"></i> Online via Zoom</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webinar 3 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 webinar-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="webinar-icon bg-info text-white me-3">
+                                    <i class="bi bi-robot"></i>
+                                </div>
+                                <h3 class="card-title h4">AI Tools for Coding & Development</h3>
+                            </div>
+                            <p class="card-text">Explore the latest AI tools that can enhance your coding workflow and boost your productivity as a developer.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-calendar3 me-2 text-info"></i> Every Thursday, 7:00 PM - 8:00 PM</li>
+                                <li class="mb-2"><i class="bi bi-person me-2 text-info"></i> Led by Alex Chen, Senior Developer</li>
+                                <li><i class="bi bi-globe me-2 text-info"></i> Online via Zoom</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webinar 4 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 webinar-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="webinar-icon bg-warning text-white me-3">
+                                    <i class="bi bi-chat-quote"></i>
+                                </div>
+                                <h3 class="card-title h4">Technical Interview Preparation</h3>
+                            </div>
+                            <p class="card-text">Master the art of technical interviews with practical exercises and insider tips from industry professionals.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-calendar3 me-2 text-warning"></i> Every Friday, 5:00 PM - 6:00 PM</li>
+                                <li class="mb-2"><i class="bi bi-person me-2 text-warning"></i> Led by David Park, Tech Recruiter</li>
+                                <li><i class="bi bi-globe me-2 text-warning"></i> Online via Zoom</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webinar 5 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 webinar-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="webinar-icon bg-danger text-white me-3">
+                                    <i class="bi bi-lightning-charge"></i>
+                                </div>
+                                <h3 class="card-title h4">Accelerated Learning Techniques for Programmers</h3>
+                            </div>
+                            <p class="card-text">Learn effective strategies to master new programming languages and technologies in record time.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-calendar3 me-2 text-danger"></i> Every Monday, 6:00 PM - 7:00 PM</li>
+                                <li class="mb-2"><i class="bi bi-person me-2 text-danger"></i> Led by Lisa Wong, Learning Specialist</li>
+                                <li><i class="bi bi-globe me-2 text-danger"></i> Online via Zoom</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="registerModalLabel">Register for Webinar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="webinarForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="reminders" checked>
+                            <label class="form-check-label" for="reminders">Send me email reminders</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Confirm Registration</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo-white.png" alt="TechCareer Logo" width="150">
+                    <p class="mt-3">Empowering careers through quality training and placement services.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-white">Programs</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <address>
+                        123 Training Avenue<br>
+                        Tech City, TC 12345<br>
+                        <a href="tel:+1234567890" class="text-white">Phone: (123) 456-7890</a><br>
+                        <a href="mailto:info@techcareer.com" class="text-white">Email: info@techcareer.com</a>
+                    </address>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2023 TechCareer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Handle webinar registration
+        document.getElementById('webinarForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your registration has been confirmed. You will receive details via email shortly.');
+            const modal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
+            modal.hide();
+        });
+    </script>
+</body>
+</html>
