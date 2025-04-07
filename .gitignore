@@ -37,4 +37,3 @@ ehthumbs.db
 # Logs
 logs
 *.log
-backend/node_modules
